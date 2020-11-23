@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background: #4a465b;
+    text-align: justify;
+}
+
+.contenedor {
+    width: 1000px;
+    margin: 20px auto;
+}
+
+header{
+    width: 100%;
+}
+
+.navegacion{
+	width: 100%;
+	background: #161f26;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #161f26;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+    transition: opacity 1.5s;
+    font-size: 20px;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: small;
+    text-align: justify;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.main {
+    width: 100%;
+    background: #fff;
+    float: left;
+}
+
+.main .imagen {
+    width: 100%;
+}
+
+.main .imagen img {
+    width: 100%;
+    vertical-align: top;
+    float: left;
+}
+
+.main .posts {
+    padding: 40px;
+}
+
+.main .posts article h2 {
+    margin-bottom: 20px;
+    color: #424242;
+}
+
+.main .posts article p {
+    margin-bottom: 15px;
+    line-height: 27px;
+}
+
+aside {
+    width: 300px;
+    background-color: #161f26;
+    padding: 20px;
+    color: #fff;
+    float: left;
+}
+
+footer {
+    width: 100%;
+    clear: both;
+    background: #000;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+#Fondo {
+    background: url('../img/img4.jpg') no-repeat center center/cover;
+    height: 500px;
+}
+
+#Fondo_2 {
+    background: url('../img/Imagen.png') no-repeat center center/cover;
+    height: 500px;
+
+}
+
+#Fondo_3 {
+    background: url('../img/Imagen\ 6.png') no-repeat center center/cover;
+    height: 500px;
+    width: auto;
+}
+
+#Fondo_5 {
+    background: url('../img/Imagen\ R.png') no-repeat center center/cover;
+    height: 500px;
+    width: auto;
+}
+
+code {
+    font-size: 12px;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}

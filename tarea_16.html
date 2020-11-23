@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/estilos_layout.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div>
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <li class="Materia"><a href="index.html"><h1><span id="titulo">Lenguajes</span> de programación</h1></a></li>
+                        <li><a href="#">Tareas (1-8)</a>
+                            <ul class="submenu">
+                                <li><a href="tarea_1.html">Tarea 1</a></li>
+                                <li><a href="tarea_2.html">Tarea 2</a></li>
+                                <li><a href="tarea_3.html">Tarea 3</a></li>
+                                <li><a href="tarea_4.html">Tarea 4</a></li>
+                                <li><a href="tarea_5.html">Tarea 5</a></li>
+                                <li><a href="tarea_6.html">Tarea 6</a></li>
+                                <li><a href="tarea_7.html">Tarea 7</a></li>
+                                <li><a href="tarea_8.html">Tarea 8</a></li>
+                            </ul>
+                        </li>
+    
+                        <li><a href="#">Tareas (9-16)</a>
+                            <ul class="submenu">
+                                <li><a href="tarea_9.html">Tarea 9</a></li>
+                                <li><a href="tarea_10.html">Tarea 10</a></li>
+                                <li><a href="tarea_11.html">Tarea 11</a></li>
+                                <li><a href="tarea_12.html">Tarea 12</a></li>
+                                <li><a href="tarea_13.html">Tarea 13</a></li>
+                                <li><a href="tarea_14.html">Tarea 14</a></li>
+                                <li><a href="tarea_15.html">Tarea 15</a></li>
+                                <li><a href="tarea_16.html">Tarea 16</a></li>
+                            </ul>
+                        </li>
+                        </li>
+    
+                        <li><a href="#">Personales</a>
+                            <ul class="submenu">
+                                <li><a href="personales_1.html">Subtema 1</a></li>
+                                <li><a href="personales_2.html">Subtema 2</a></li>
+                                <li><a href="personales_3.html">Subetema 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="main">
+            <div id="Fondo"></div>
+
+            <section class="posts">
+                <article>
+                    <h2>Tarea #16</h2>
+                    <h3>Elaborar un programa en JAVA y RUBY que calcule la multiplicación de dos matrices que ingrese el usuario. (nota: Validar lo que sea necesario para poder realizar la multiplicación de matrices)</h3>
+                    <br> 
+                    <h5>Código en Java</h5>
+                    <pre><code>
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+	    int filas_1, columnas_1, filas_2, columnas_2;
+        System.out.println("Ingresa el numero de filas de la matriz 1: ");
+        filas_1 = scanner.nextInt();
+
+        System.out.println("Ingresa el numero de columnas de la matriz 1: ");
+        columnas_1 = scanner.nextInt();
+
+        System.out.println("Ingresa el numero de filas de la matriz 2: ");
+        filas_2 = scanner.nextInt();
+
+        System.out.println("Ingresa el numero de columnas de la matriz 2: ");
+        columnas_2 = scanner.nextInt();
+
+        if (columnas_1 != filas_2) {
+            System.out.println("Las columnas de la matriz 1 deben coincidir con las filas de la matriz 2.");
+        } else {
+            int matriz_1[][] = new int[filas_1][columnas_1];
+            int matriz_2[][] = new int[filas_2][columnas_2];
+            int matrizResultante[][] = new int[filas_1][columnas_2];
+
+            //Llenado de matriz 1
+            for (int i=0; i < filas_1; i++) {
+                for (int j=0; j < columnas_1; j++) {
+                    System.out.print("Matriz 1 - Posicion["+i+"]["+j+"] = ");
+                    matriz_1[i][j] = scanner.nextInt();
+                }
+            }
+            //Llenado de matriz 2
+            for (int x=0; x < filas_2; x++) {
+                for (int y=0; y < columnas_2; y++) {
+                    System.out.print("Matriz 2 - Posicion["+x+"]["+y+"] = ");
+                    matriz_2[x][y] = scanner.nextInt();
+                }
+            }
+            //Multiplicación de matrices
+            for (int i1=0;i1 < filas_1;i1++){
+                for (int j2=0;j2 < columnas_2;j2++){
+                    matrizResultante[i1][j2] = 0;
+                    for (int k=0;k < columnas_1;k++){
+                        matrizResultante[i1][j2] += matriz_1[i1][k] * matriz_2[k][j2];
+                    }
+                }
+            }
+            //Imprimiendo matriz 1
+            for (int i=0; i < filas_1; i++) {
+                for (int j=0; j < columnas_1; j++) {
+                    System.out.print(matriz_1[i][j] + " ");
+                }
+                System.out.println("");
+            }
+            System.out.println(" ");
+            //Imprimiendo la matriz 2
+            for (int x=0; x < filas_2; x++) {
+                for (int y=0; y < columnas_2; y++) {
+                    System.out.print(matriz_2[x][y] + " ");
+                }
+                System.out.println("");
+            }
+            System.out.println("");
+            //Imprimiendo la matriz resultante
+            for (int i=0; i < filas_1; i++) {
+                for (int j=0; j < columnas_2; j++) {
+                    System.out.print(matrizResultante[i][j] + " ");
+                }
+                System.out.println(" ");
+            }
+        }
+    }
+}
+
+                    </code></pre>
+                    <hr>
+                    <h5>Código en Ruby</h5>
+                    <pre><code>
+print "Ingrese el numero de filas de la matriz 1: "
+filas1 = gets().to_i
+print"Ingrese el numero de columnas de la matriz 1: "
+columnas1 = gets().to_i
+print "Ingrese el numero de filas de la matriz 2: "
+filas2 = gets().to_i
+print "Ingrese el numero de columnas de la matriz 2: "
+columnas2 = gets().to_i
+
+if columnas1 != filas2
+    print "Las columnas de la matriz 1 deben ser igual a las filas de la matriz 2 para realizar la multiplicacion"
+    exit
+end
+
+matriz1 = Array.new(filas1){Array.new(columnas1)}
+matriz2 = Array.new(filas2){Array.new(columnas2)}
+matriz_resultante = Array.new(filas1){Array.new(columnas2)}
+
+#Llenado de matriz 1
+for i in 0..filas1 - 1 do
+    for j in 0..columnas1 - 1 do
+        print "Ingrese un numero[#{i}][#{j}] : "
+        matriz1[i][j] = gets().to_i
+    end
+end
+
+#Llenado de la matriz 2 
+for i in 0..filas2 - 1 do
+    for j in 0..columnas2 - 1 do
+        print "Ingrese un numero[#{i}][#{j}]: "
+        matriz2[i][j] = gets().to_i
+    end
+end
+
+#Multiplicacion de matrices 
+for i in 0..filas1 - 1 do
+    for j in 0..columnas2 - 1 do
+        matriz_resultante[i][j] = 0
+        for f in 0..columnas1 - 1 do
+            matriz_resultante[i][j] += matriz1[i][f] * matriz2[f][j]
+        end
+    end
+end
+
+#Imprimiendo matriz 1
+puts "Matriz 1: "
+for i in 0..filas1 - 1 do
+    for j in 0..columnas1 - 1 do
+        print "#{matriz1[i][j]}  "
+    end
+    print "\n"
+end
+
+print "\n"
+
+#Imprimiendo la matriz 2
+puts "Matriz 2: "
+for i in 0..filas2 - 1 do
+    for j in 0..columnas2 - 1 do
+        print "#{matriz2[i][j]}  "
+    end
+    print "\n"
+end
+
+print "\n"
+
+#Imprimiendo la matriz resultante 
+puts "Matriz resultante: "
+for i in 0..filas1 - 1 do
+    for j in 0..columnas2 - 1 do
+        print matriz_resultante[i][j]
+    end
+    print "\n"
+end
+                    </code></pre>
+                </article>
+            </section>
+
+        </section>
+        
+
+        <footer>
+            <ul>
+                <li><a href="personales_1.html">Personales</a></li>
+                <li><a href="tarea_15.html">Anterior</a></li>
+                <li><a href="tarea_16.html">Inicio del tema actual</a></li>
+                <li><a href="index.html">Pagina de inicio</a></li>
+            </ul>  
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/estilos_layout.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div>
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <li class="Materia"><a href="index.html"><h1><span id="titulo">Lenguajes</span> de programación</h1></a></li>
+                        <li><a href="#">Tareas (1-8)</a>
+                            <ul class="submenu">
+                                <li><a href="tarea_1.html">Tarea 1</a></li>
+                                <li><a href="tarea_2.html">Tarea 2</a></li>
+                                <li><a href="tarea_3.html">Tarea 3</a></li>
+                                <li><a href="tarea_4.html">Tarea 4</a></li>
+                                <li><a href="tarea_5.html">Tarea 5</a></li>
+                                <li><a href="tarea_6.html">Tarea 6</a></li>
+                                <li><a href="tarea_7.html">Tarea 7</a></li>
+                                <li><a href="tarea_8.html">Tarea 8</a></li>
+                            </ul>
+                        </li>
+    
+                        <li><a href="#">Tareas (9-16)</a>
+                            <ul class="submenu">
+                                <li><a href="tarea_9.html">Tarea 9</a></li>
+                                <li><a href="tarea_10.html">Tarea 10</a></li>
+                                <li><a href="tarea_11.html">Tarea 11</a></li>
+                                <li><a href="tarea_12.html">Tarea 12</a></li>
+                                <li><a href="tarea_13.html">Tarea 13</a></li>
+                                <li><a href="tarea_14.html">Tarea 14</a></li>
+                                <li><a href="tarea_15.html">Tarea 15</a></li>
+                                <li><a href="tarea_16.html">Tarea 16</a></li>
+                            </ul>
+                        </li>
+                        </li>
+    
+                        <li><a href="#">Personales</a>
+                            <ul class="submenu">
+                                <li><a href="personales_1.html">Subtema 1</a></li>
+                                <li><a href="personales_2.html">Subtema 2</a></li>
+                                <li><a href="personales_3.html">Subetema 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="main">
+            <div id="Fondo"></div>
+
+            <section class="posts">
+                <article>
+                    <h2>Tarea #11</h2>
+                    <h3>Construya un programa en JAVA y RUBY. Que calcule e imprima la siguiente serie para los N primeros  términos</h3>
+                    <h4>-1,2,2,-3,4,4,4,-5,6,6,6,6,-7....</h4>
+                    <h5>Código en Java</h5>
+                    <pre><code>
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite el numero de elementos que desea imprimir: ");
+        int numero = scanner.nextInt();
+        scanner.close();
+        Serie(numero);
+    }
+    public static void Serie(int n) {
+        int i, j;
+        int x = 1;
+        int cont_1 = 0;
+        for (i=1; i<=n; i++) {
+            if (cont_1 == n)
+                break;
+            if (i % 2 != 0) {
+                System.out.println(i * -1);
+                cont_1++;
+            } else {
+                x++;
+                for (j=1; j<=x; j++) {
+                    System.out.println(i);
+                    cont_1++;
+                    if (cont_1 == n)
+                        break;
+                }
+            }
+        }
+    }
+}
+                    </code></pre>
+                    <hr>
+                    <h5>Código en Ruby</h5>
+                    <pre><code>
+puts "Ingrese el numero de elementos que desea imprimir: "
+n = gets().to_i
+
+def serie(n)
+    x = 1
+    cont = 0
+    for i in 1..n do
+        if cont == n
+            break
+        end
+        if i%2 != 0
+            puts i * -1
+            cont = cont + 1
+        else
+            x = x + 1
+            for j in 1..x do
+                puts i 
+                cont = cont + 1
+                if cont == n
+                    break
+                end
+            end
+        end
+    end
+end
+
+serie(n)
+                    </code></pre>
+                </article>
+            </section>
+
+        </section>
+        
+
+        <footer>
+            <ul>
+                <li><a href="tarea_12.html">Siguiente</a></li>
+                <li><a href="tarea_10.html">Anterior</a></li>
+                <li><a href="tarea_11.html">Inicio del tema actual</a></li>
+            </ul>  
+        </footer>
+
+    </div>
+</body>
+</html>

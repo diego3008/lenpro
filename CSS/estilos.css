@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+h1, h2, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+
+#titulo {
+    color: #CE7D35;
+}
+
+header{
+    width: 100%;
+}
+
+.navegacion{
+	width: 1440px;
+	background: #333;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: small;
+    text-align: justify;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+#Fondo {
+    background: url('../img/vancouver.jpg') no-repeat center center/cover;
+    height: 500px;
+}
+
+#Fondo .Nombre {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+    font-size: 40px;
+}
+
+#Fondo .Nombre #titulo-2 {
+    color: #fff;
+    font-size: 40px;
+}
+
+#home-info {
+    height: 400px;
+  }
+  
+  #home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url('../img/img_6.jpg') no-repeat;
+    min-height: 150%;
+  }
+  
+  #home-info .info-content {
+    float: right;
+    width: 50%;
+    height: 150%;
+    text-align: justify;
+    padding: 50px 30px;
+    overflow: hidden;
+    background: #333;
+    color: #fff;
+}
+
+#home-info .info-content p {
+    font-size: 30px;
+    padding-top: 20px;
+}
+  
+  #home-info .info-content p {
+    padding-bottom: 30px;
+  }
+
+#titulo-3 {
+    color: #CE7D35;
+}
+
+footer{
+    background: #CE7D35;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}

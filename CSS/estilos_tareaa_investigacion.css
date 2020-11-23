@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #DC5A00;
+}
+
+h1, h2, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+header { 
+    width: 100%;
+}
+
+#Descripcion {
+    background: #333;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 500px;
+}

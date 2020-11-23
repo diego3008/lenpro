@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/estilos_tarea_5.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div>
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <li class="Materia"><a href="index.html"><h1><span id="titulo">Lenguajes</span> de programación</h1></a></li>
+                        <li><a href="#">Tareas (1-8)</a>
+                            <ul class="submenu">
+                                <li><a href="tarea_1.html">Tarea 1</a></li>
+                                <li><a href="tarea_2.html">Tarea 2</a></li>
+                                <li><a href="tarea_3.html">Tarea 3</a></li>
+                                <li><a href="tarea_4.html">Tarea 4</a></li>
+                                <li><a href="tarea_5.html">Tarea 5</a></li>
+                                <li><a href="tarea_6.html">Tarea 6</a></li>
+                                <li><a href="tarea_7.html">Tarea 7</a></li>
+                                <li><a href="tarea_8.html">Tarea 8</a></li>
+                            </ul>
+                        </li>
+    
+                        <li><a href="#">Tareas (9-16)</a>
+                            <ul class="submenu">
+                                <li><a href="tarea_9.html">Tarea 9</a></li>
+                                <li><a href="tarea_10.html">Tarea 10</a></li>
+                                <li><a href="tarea_11.html">Tarea 11</a></li>
+                                <li><a href="tarea_12.html">Tarea 12</a></li>
+                                <li><a href="tarea_13.html">Tarea 13</a></li>
+                                <li><a href="tarea_14.html">Tarea 14</a></li>
+                                <li><a href="tarea_15.html">Tarea 15</a></li>
+                                <li><a href="tarea_16.html">Tarea 16</a></li>
+                            </ul>
+                        </li>
+                        </li>
+    
+                        <li><a href="#">Personales</a>
+                            <ul class="submenu">
+                                <li><a href="personales_1.html">Subtema 1</a></li>
+                                <li><a href="personales_2.html">Subtema 2</a></li>
+                                <li><a href="personales_3.html">Subetema 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="main">
+            <div id="Fondo"></div>
+
+            <section class="posts">
+                <article>
+                    <h2>Tarea #5: Scheme</h2>
+                    <h3>Investigar: </h3>
+                    <h4>Símbolos, sintaxis, esqueleto.</h4>
+                    <h4>Aplicación para editar y ejecutar</h4>
+                    <h4>A que paradigma pertenece </h4>
+                    <h4>Ejemplo de un programa en este lenguaje</h4>
+
+                    <h5>SÍMBOLOS (IDENTIFICADORES)</h5>
+                    <p>Un símbolo es lo que en otros lenguajes se denomina identificador. En Scheme los símbolos e identificadores pueden contener caracteres internacionales (Unicode, UTF-8). El intérprete DrScheme guarda los ficheros de texto en esa codificación. </p>
+                    <p>'hola</p>
+                    <p>(symbol 'hola-que<>)</p>
+                    <p>(symbol->string 'hola-que<>)</p>
+                    <p>'mañana</p>
+                    <p>'lápiz ; aunque sea posible, no vamos a usar acentos en los símbolos</p>
+                    <p>; pero sí en los comentarios</p>
+                    <p>(symbol? 'hola) ; #t</p>
+                    <p>(symbol? "hola") ; #f</p>
+                    <p>(symbol?  #f) ; #f</p>
+                    <p>(equal? 'hola 'hola)</p>
+                    <p>(equal? 'hola "hola")</p>
+                    <p>Diferencia entre símbolos y cadenas: un símbolo (identificador) es un objeto simple y una cadena es un objeto compuesto. El intérprete de Scheme codifica un símbolo mediante un único número, su valor hash. Otra diferencia bastante clara: un símbolo no puede contener un espacio, pero una cadena sí.</p> <br>
+                    <h5>Sintaxis</h5>
+                    <p>if	Condicional simple
+                    </p>
+                    <p>cond	     Condicional anidado</p>
+                    <p>else	Sentencia condicional en el cond que determina que el siguiente valor de verdad es falso</p>
+                    <p>#t o true	Valor de verdad de verdadero</p>
+                    <p>#f o false	Valor de verdad de falso</p>
+                    <p>and	Operador condicional y, las condiciones tienen que ser verdaderas para que arroje un valor de verdad verdadero</p>
+                    <p>or	Operador condicional o, con que solo una de las condiciones se cumpla se arrojara un valor de verdad verdadero</p>
+                    <p>not	Operador condicional no, invierte la condición, si la condición arroja verdadero, con el not esa misma condición arrojara falso</p>
+                    <p>number?	Evalúa si el dato es un numero</p>
+                    <p>string?	Evalúa si el dato es una cadena de texto</p>
+                    <p>string=?	Evalúa si el dato (implicando que sea una cadena de texto) es
+                        igual a otra
+                        </p>
+                    <p>integer?	Evalúa si el dato es un numero</p>
+                    <p>positive?	Evalúa si un número es positivo</p>
+
+                    <p>zero?	Evalúa si un número es cero o no</p>
+                    <p>abs	Arroja el valor absoluto de un numero</p>
+                    <p>sqr	Arroja el valor de un número elevado al cuadrado</p>
+                    <p>expt	Arroja el valor de un número elevado a una potencia indicada por el usuario, el segundo numero ingresado es el exponente</p>
+                    <p>sqrt	Arroja la raiz cuadrada de un numero</p>
+                    <p>ceiling	Aproxima un numero real al siguiente entero, aproxima a techo</p>
+                    <p>floor	Aproxima un numero real a su equivalente en entero, aproxima a piso</p>
+                    <p>pi	El valor numérico de pi</p>
+                    <p>define-struct	Es la declaración para crear una estructura</p>
+                    <p>list o '	Es la declaración para crear una lista</p>
+                    <p>cons	Es la declaración para crear una lista, siempre se finaliza con un empty y cerrando todas las declaraciones</p>
+                    <p>append	Une dos listas</p>
+                    <p>empty	Un tipo de dato que representa nulo o vacío, sirve para finalizar listas</p>
+                    <p>empty?	Evalúa si un elemento es nulo o vacío</p> <br>
+                    <h5>Esqueleto de los programas</h5>
+                    <p>(define x 7)</p>
+                    <p>(define y  (* x x))</p>
+                    <p>(define suma +)</p>
+                    <p>(define (pitagoras x y) (sqrt(+(sqrt x)(sqrt y))))</p>
+                    <p>(define(es-par n))</p>
+                    <p>(define par?)</p>
+                    <p>(if (=(modulo n2) 0) #t #f)</p>
+                    <p>(if(par?))</p>
+                    <br>
+                    <h5>Aplicación para editar y ejecutar</h5>
+                    <p>DrScheme es el mejor IDE de Scheme, de acuerdo a la comunidad de StackOverflow. Tiene integrado un compilador JIT, y pueden producirse ejecutables stand-alone</p> <br>
+                    <h5>A que paradigma pertenece</h5>
+                    <p>Paradigma funcional puro
+
+                    </p> <br>
+                    <h5>Ejecucuión de un programa</h5>
+                    <p>programa que dibuja un triangulo</p>
+                    <p>(define (T) ;lo que hacemos con esta función es la figura con la que se ;llenara el triángulo
+                        (display "*"))
+                        </p>
+                    <p>(define (dibuje cant) ;esta funcion me dibuja los "*" pasando un espacio :entre ellos</p>
+                    <p>   (do ((i 0 (+ i 1)))</p>
+                    <p>       ((= i cant) )</p>
+                    <p>(t)
+                        (display " ")))
+                   </p>
+                    <p>(define (triangulo) ;y esta es la que me dibuja el triangulo aquí defino ;que el tamaño sea de 10 *'s</p>
+                    <p>   (do ((i 1 (+ i 1)));observa como se hace el ciclo :D
+                        ((= i 10) )
+               </p>
+                    <p>     (dibuje i);llamada a la funcion
+                        (newline)));pasa renglon
+                   
+                   </p> 
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+
+                </article>
+            </section>
+
+        </section>
+        
+
+        <footer>
+            <ul>
+                <li><a href="tarea_6.html">Siguiente</a></li>
+                <li><a href="tarea_4.html">Anterior</a></li>
+                <li><a href="tarea_5.html">Inicio del tema actual</a></li>
+            </ul>          
+        </footer>
+
+    </div>
+</body>
+</html>

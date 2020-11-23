@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/estilos_layout.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div>
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <li class="Materia"><a href="index.html"><h1><span id="titulo">Lenguajes</span> de programación</h1></a></li>
+                        <li><a href="#">Tareas (1-8)</a>
+                            <ul class="submenu">
+                                <li><a href="tarea_1.html">Tarea 1</a></li>
+                                <li><a href="tarea_2.html">Tarea 2</a></li>
+                                <li><a href="tarea_3.html">Tarea 3</a></li>
+                                <li><a href="tarea_4.html">Tarea 4</a></li>
+                                <li><a href="tarea_5.html">Tarea 5</a></li>
+                                <li><a href="tarea_6.html">Tarea 6</a></li>
+                                <li><a href="tarea_7.html">Tarea 7</a></li>
+                                <li><a href="tarea_8.html">Tarea 8</a></li>
+                            </ul>
+                        </li>
+    
+                        <li><a href="#">Tareas (9-16)</a>
+                            <ul class="submenu">
+                                <li><a href="tarea_9.html">Tarea 9</a></li>
+                                <li><a href="tarea_10.html">Tarea 10</a></li>
+                                <li><a href="tarea_11.html">Tarea 11</a></li>
+                                <li><a href="tarea_12.html">Tarea 12</a></li>
+                                <li><a href="tarea_13.html">Tarea 13</a></li>
+                                <li><a href="tarea_14.html">Tarea 14</a></li>
+                                <li><a href="tarea_15.html">Tarea 15</a></li>
+                                <li><a href="tarea_16.html">Tarea 16</a></li>
+                            </ul>
+                        </li>
+                        </li>
+    
+                        <li><a href="#">Personales</a>
+                            <ul class="submenu">
+                                <li><a href="personales_1.html">Subtema 1</a></li>
+                                <li><a href="personales_2.html">Subtema 2</a></li>
+                                <li><a href="personales_3.html">Subetema 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="main">
+            <div id="Fondo"></div>
+
+            <section class="posts">
+                <article>
+                    <h2>Tarea #7: R</h2>
+                    <h3>Investigar: </h3>
+                    <h4>Símbolos, sintaxis, esqueleto</h4>
+                    <h4>Aplicación para editar y ejecutar</h4>
+                    <h4>Ejemplo de un programa en este lenguaje</h4> <br> <br>
+                    <h5>Simbolos</h5>
+                    <p>+ -> adición</p>
+                    <p>- -> substracción</p>
+                    <p>* -> multiplicación</p>
+                    <p>/ -> división</p>
+                    <p>^ -> potencia</p>
+                    <p>%% -> modulo</p>
+                    <p>%/% -> división de enteros</p>
+                    <p>< -> menor que</p>
+                    <p>> -> mayor que</p>
+                    <p><= -> menor o igual que</p>
+                    <p>>= -> mayor o igual que</p>
+                    <p>== -> igual</p>
+                    <p>!= -> diferente de</p>
+                    <p>!x -> No lógico</p>
+                    <p>x & y -> Y lógico</p>
+                    <p>x && y -> id</p>
+                    <p>x | y -> O lógico</p>
+                    <p>x || y -> id</p>
+                    <p>xor(x,y) -> O exclusivo</p> <br>
+                    <h5>Sintaxis</h5>
+                    <p>La sintaxis en R es muy similar a la de otros lenguajes de programación como JAVA o C. Las normas básicas que definen la sintaxis de R son:</p>
+                    <p>No se tienen en cuenta los espacios en blancos: podemos o no dejar espacios para que el código se puede ordenar de forma adecuada y poder entenderse.</p>
+                    <p>Se distinguen las mayúsculas y minúsculas: para variables en el código, podemos crear diferentes variables con nombres iguales pero alternando mayúsculas y minúsculas.</p>
+                    <p>Se pueden incluir comentarios: como vimos anteriormente los comentarios se utilizan para añadir información en el código.</p>
+                    <p>No es necesario terminar cada sentencia con el carácter de punto y coma (;): en la mayoría de lenguajes de programación, es obligatorio terminar cada sentencia con este carácter. En en cambio R podemos o no terminar de esta forma.</p>
+                    <p>Lenguaje orientado a objetos: todo en R son objetos, las variables, datos, funciones y resultados, que se generan en R son objetos estos se modifican o manipulan con operadores o funciones (que a su vez son objetos).</p>
+                    <p>R se divide en cinco clases básicas o atómicas, estas son bloques de construcción o elementos que conforman a los objetos, son 5 clases principales: numérica o doble, entero, complejo, lógico y de carácter.</p> <br>
+                    <h5>Esqueleto</h5>
+                    <div id="Fondo_5"></div> <br> <br> <br>
+                    <h5>Aplicación para editar y ejecutar</h5>
+                    <p>•	RStudio</p>
+                    <p>•	Visual Studio Code</p>
+                    <p>•	Atom</p> <br>
+                    <h5>A que tipo de paradigma pertenece</h5> 
+                    <p>MULTIPARADIGMA</p>
+                    <p>•	Funcional</p>
+                    <p>•	Vectorial</p>
+                    <p>•	Imperativo</p>
+                    <p>•	Procedural</p>
+                    <p>•	Orientado a objetos</p> <br>
+                    <h5>Ejecución de un programa</h5>
+                    <p>En R es posible definir funciones con un número variable de argumentos. Para ello, la sintaxis es:</p>
+                    <p>f = function(x, ...) { cuerpo de la función }</p>
+                    <p>f = function(...,x) { cuerpo de la función }</p>
+                    <p>En el primer caso, la función podría llamarse sin hacer referencia explícita a x (por ejemplo  f(2) ).</p>
+                    <p>En el segundo caso deberíamos especificar   f(x=2), dado que el sistema, al encontrar primero los
+                        argumentos variables, no podría saber si nos estamos refiriendo a x o a uno de los argumentos
+                        variables.
+                        
+                        </p>
+                    <p>Vamos a poner un ejemplo en dos fases. En primer lugar, para entender como funciona al tema,
+                        definiremos una función que simplemente devuelve sus argumentos:
+                        </p>
+                    <p>> f = function(...){ L <- list(...) ; return(L)}</p>
+                    <p>> f(1,2,3)</p>
+                    <p>[[1]]</p>
+                    <p>[1] 1</p>
+                    <p>[[2]]</p>
+                    <p>[1] 2</p>
+                    <p>[[3]]</p>
+                    <p>[1] 3</p>
+                    <p>> f(c(1,2),c(3,4,5))</p>
+                    <p>[[1]]</p>
+                    <p>[1] 1 2</p>
+                    <p>[[2]]</p>
+                    <p>[1] 3 4 5</p>
+                    <p>Así pues, es variable el número de argumentos, tanto como el número de elementos de cada uno.
+                        Vamos a aprovechar esta facilidad para definir una función que devuelva algunas medidas resumen
+                        de las distribuciones que se le pasen como argumento. La entrada a la función será una serie de
+                        conjuntos de datos, y la salida la media, varianza, mínimo y máximo de cada uno de los conjuntos.
+                        </p>
+                    <p>f = function(...)</p>
+                    <p>{</p>
+                    <p>datos = list(...)</p>
+                    <p>medias = lapply(datos,mean)    # lapply aplica una función sobre una lista</p>
+                    <p>varianzas = lapply(datos,var)</p>
+                    <p>maximos = lapply(datos,max)</p>
+                    <p>minimos = lapply(datos,min)</p>
+                    <p>for(i in 1:length(datos))</p>
+                    <p>{</p>
+                    <p>cat("Distribución ",i,": \n")   # La función cat es para visualizar cosas</p>
+                    <p>cat("media: ",medias[[i]],"varianza: ",varianzas[[i]],"maximo: ",maximos[[i]],"minimo: ",minimos[[i]],"\n")</p>
+                    <p>cat("------------------------------------------------\n")</p>
+                    <p>}</p>
+                    <p>}</p>
+                    <p>Veamos un ejemplo sencillo:</p>
+                    <p>>  f(c(1,2),c(1,3,5,7),c(-1,2,-5,6,9))</p>
+                    <p>Distribución  1 :</p>
+                    <p>media:  1.5 varianza:  0.5 maximo:  2 minimo:  1</p>
+                    <p>------------------------------------------------</p>
+                    <p>Distribución  2 :</p>
+                    <p>media:  4 varianza:  6.666667 maximo:  7 minimo:  1</p>
+                    <p>------------------------------------------------</p>
+                    <p>Distribución  3 :</p>
+                    <p>media:  2.2 varianza:  30.7 maximo:  9 minimo:  -5</p>
+                    <p>------------------------------------------------</p>
+                    <p>O también:</p>
+                    <p>> x = rnorm(100)</p>
+                    <p>> y = runif(50)</p>
+                    <p>> f(x,y)</p>
+                    <p>Distribución  1 :</p>
+                    <p>media:  0.1616148 varianza:  0.87319 maximo:  2.201592 minimo:  -2.143932</p>
+                    <p>------------------------------------------------</p>
+                    <p>Distribución  2 :</p>
+                    <p>media:  0.4985783 varianza:  0.08253697 maximo:  0.9881924 minimo:  0.01329678</p>
+                    <p>------------------------------------------------</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+
+                </article>
+            </section>
+
+        </section>
+        
+
+        <footer>
+            <ul>
+                <li><a href="tarea_8.html">Siguiente</a></li>
+                <li><a href="tarea_6.html">Anterior</a></li>
+                <li><a href="tarea_7.html">Inicio del tema actual</a></li>
+            </ul>          
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/estilos_layout.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div>
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <li class="Materia"><a href="index.html"><h1><span id="titulo">Lenguajes</span> de programación</h1></a></li>
+                        <li><a href="#">Tareas (1-8)</a>
+                            <ul class="submenu">
+                                <li><a href="tarea_1.html">Tarea 1</a></li>
+                                <li><a href="tarea_2.html">Tarea 2</a></li>
+                                <li><a href="tarea_3.html">Tarea 3</a></li>
+                                <li><a href="tarea_4.html">Tarea 4</a></li>
+                                <li><a href="tarea_5.html">Tarea 5</a></li>
+                                <li><a href="tarea_6.html">Tarea 6</a></li>
+                                <li><a href="tarea_7.html">Tarea 7</a></li>
+                                <li><a href="tarea_8.html">Tarea 8</a></li>
+                            </ul>
+                        </li>
+    
+                        <li><a href="#">Tareas (9-16)</a>
+                            <ul class="submenu">
+                                <li><a href="tarea_9.html">Tarea 9</a></li>
+                                <li><a href="tarea_10.html">Tarea 10</a></li>
+                                <li><a href="tarea_11.html">Tarea 11</a></li>
+                                <li><a href="tarea_12.html">Tarea 12</a></li>
+                                <li><a href="tarea_13.html">Tarea 13</a></li>
+                                <li><a href="tarea_14.html">Tarea 14</a></li>
+                                <li><a href="tarea_15.html">Tarea 15</a></li>
+                                <li><a href="tarea_16.html">Tarea 16</a></li>
+                            </ul>
+                        </li>
+                        </li>
+    
+                        <li><a href="#">Personales</a>
+                            <ul class="submenu">
+                                <li><a href="personales_1.html">Subtema 1</a></li>
+                                <li><a href="personales_2.html">Subtema 2</a></li>
+                                <li><a href="personales_3.html">Subetema 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="main">
+            <div id="Fondo"></div>
+
+            <section class="posts">
+                <article>
+                    <h2>Tarea #3: Prolog</h2>
+                    <h3>Investigar:</h3>
+                    <h4>Símbolos, sintaxis, esqueleto</h4>
+                    <h4>Aplicación para editar y ejecutar </h4>
+                    <h4>A que tipo de paradigma pertenece</h4>
+                    <h4>Un ejemplo de programa escrito en este lenguaje</h4> <br> <br>
+
+                    <h5>Símbolos</h5>
+                    <p>-	Constantes:
+                        (2,4,7,6,12,20,60)
+                        </p> <br>
+                    <p>Relación binaria:
+                        is,+,-,*,/,mod
+                        </p> <br>
+                    <p>Variables:
+                        Las variables en Prolog no son variables en el sentido habitual, por eso las llamamos variables lógicas. Se escriben como una secuencia de caracteres alfabéticos comenzando siempre por mayúscula o subrayado. 
+                        </p> <br>
+                    <p>Ejemplos de variables: 
+                        Variable 
+                        _Hola
+                        </p> <br>
+                        <p>Pero no son variables: 
+                            variable 
+                            $Hola 
+                            p__ 
+                            </p> <br>
+                        <p>El hecho de que los nombres de variables comiencen por mayúscula (o subrayado) evita la necesidad de declarar previamente y de manera explícita las variables, tal y como ocurre en otros lenguajes.</p> <br>
+                    <h5>Sintaxis</h5> <br>
+                    <p>Datos</p>
+                    <p>El sistema Prolog reconoce el tipo de un objeto en el programa por medio de su forma sintáctica. Esto es posible porque la sintaxis de Prolog especifica diferentes formas para cada tipo de datos. La forma de distinguir entre átomos y variables es que las variables empiezan con letras mayúsculas, mientras que los átomos con minúsculas. No existe información adicional para comunicarle a Prolog el orden para reconocer el tipo de un objeto.</p> <br>
+                    <p>Números</p> <br>
+                    <p>Los números usados en Prolog incluyen números enteros y números reales. La sintaxis de los enteros es simple: 
+                        1
+                        1313
+                        0 
+                        </p>
+                    <p>El tratamiento de números reales depende de la implementación de Prolog. Asumiendo una sintaxis simple: 
+                        3.14 
+                        -0.0035 
+                        100.2 
+                        </p> <br>
+                    <p>Los números reales no son muy utilizados en programas de Prolog. La razón de esto es que Prolog es principalmente utilizado como un lenguaje simbólico, no de computación numérica. En la computación simbólica, los enteros son utilizados, por ejemplo, para contar el número de elementos en una lista; por lo que los números reales son poco utilizados. </p> <br>
+                        
+                    <p>Operadores</p> <br>
+                    <p>Los operadores de Prolog están divididos en dos clases: aritméticos y relacionales. 
+                        Los operadores aritméticos incluyen los símbolos para suma, resta, multiplicación y división . En Prolog, si dos enteros son sumados, restados o multiplicados, el resultado será un entero. Siempre que uno de los operandos, en cualquiera de estas operaciones sea un número real, el resultado siempre será un real. El resultado de una división, siempre que los operandos sean enteros o reales, será siempre real. 
+                        ARITMÉTICOS
+                        </p> 
+                    <p>Todas las versiones de Prolog soportan los siguientes operadores aritméticos, listados en el orden de prioridad de ejecución. </p> <br>
+                    <p>+ --> SUMA </p>
+                    <p>- --> RESTA </p>
+                    <p>* --> MULTIPLICACIÓN </p>
+                    <p>/ --> DIVISIÓN </p>
+                    <p>// --> DIVISION ENTERA </p>
+                    <p>MOD --> RESIDUO </p>
+                    <p>^ --> POTENCIA </p> <br>
+                    <p>Los paréntesis se pueden utilizar para dar preferencia de ejecución en una expresión compuesta. Prolog utiliza la precedencia de operadores con la regla de la mano izquierda. </p> <br>
+                    <p>A continuación se muestran algunas operaciones más complejas que PROLOG provee: </p>
+                    <p>Sqrt(X) 	Calcula la raíz cuadrada de la variable </p>
+                    <p>log(X) 	Calcula el logaritmo de X </p>
+                    <p>ln(X) 	Calcula el logaritmo natural de X </p>
+                    <p>abs(B) 	Regresa el valor absoluto de B </p>
+                    <p>sin(T) 	Seno de T </p>
+                    <p>cos(A) 	Coseno de A </p>
+                    <p>tan(C) 	Tangente de C </p> <br>
+
+                    <p>Relacionales</p>
+                    <p>Prolog soporta los siguientes operadores relacionales: </p> <br>
+                    <p>= --> IGUAL QUE </p>
+                    <p>> --> MAYOR QUE </p>
+                    <p>>= --> MAYOR O IGUAL QUE </p>
+                    <p>>= --> MENOR O IGUAL QUE </p>
+                    <p> <>  --> DESIGUAL QUE </p>
+                    <p>=/= --> DIFERENTE QUE </p>
+                    <p>is --> EVALUADOR DE EXPRESIÓN </p>
+                    <p>seed --> GENERADOR DE NÚMEROS ALEATORIOS </p>
+                    <p>Cuando dos objetos que son símbolos o cadenas de caracteres son comparados, los caracteres son convertidos a su equivalente ASCII. El valor de cada carácter es examinado a partir del operador relacional, de izquierda a derecha.
+                        Predicados
+                        </p>
+                    <p>Un predicado es la relación directa con una expresión. Cada predicado usado en una cláusula de Prolog debe ser declarado, basado en la declaración de los tipos de dominios para cada uno de los nombres de los objetos. 
+                        paciente(nombre, edad, peso, presion_sanguínea). 
+                        mercado(encargado, vendedor).
+                        </p>
+
+                    <p>Estructuras</p>
+                    <p>Los objetos estructurados (o simplemente estructuras) son objetos que tienen varios componentes. Los componentes pueden ser a su vez estructuras. Por ejemplo, la fecha, puede ser vista como una estructura con 3 componentes: día, mes y año. Las estructuras son tratadas en el programa como objetos simples, aunque estén formadas por muchos componentes. El orden en que se combinan los componentes dentro de un objeto simple, es la forma en que escogemos una functor. Un functor conveniente para nuestro ejemplo es fecha. Entonces la fecha 1o. de Enero 1975 puede escribirse: </p>
+                    <p>fecha(1, enero, 1975) </p>
+                    <p>Todos los componentes en este ejemplo son constantes (2 enteros y un átomo). En la siguiente figura vemos como se representa en forma de árbol, y a su vez cómo está escrito en Prolog: </p>
+                    <p>Ahora bien, cualquier día de enero de 1975 puede representarse mediante la estructura: </p>
+                    <p>fecha(Día, enero, 1975) </p>
+                    <p>Donde Día es una variable que puede ser instanciada por cualquier objeto en cualquier momento de la ejecución del programa. Sintácticamente, todos los objetos de datos en Prolog son términos. Por ejemplo, enero y date(1,enero,1975) son términos.</p>
+                    <p>Consultas</p>
+                    <p>Para plantear una consulta en Prolog, el usuario simplemente prueba ésta, para ver si ésta es verdadera. Si la prueba es positiva, Prolog contesta: YES, de lo contrario responde NO, o también se usa TRUE o FALSE, dependiendo del programa que se use para la programación del 
+                        lenguaje. paciente ("ana", femenino). yes 
+                        </p> <br>
+                    <p>Comentarios</p>
+                    <p>Cuando se quiere hacer un comentario que cuenta con más de una línea, se hace de la siguiente manera: 
+                        /* Comentario x Comentario y */ 
+                        Si el comentario es de una solo línea simplemente se antecede el signo de % al comentario. Es importante saber que los comentarios no tienen efecto en la ejecución del programa. 
+                        % Comentario 
+                        </p> <br>
+                    <p>Clausulas y relaciones</p>
+                    <p>La programación lógica está basada en la noción de relación . Debido a que en la relación es un concepto más general de una aplicación. La programación lógica es potencialmente de alto nivel. Considerar 2 conjuntos de valor S y T, R es la Relación entre S y T, para toda X que pertenece a S y Y que pertenece a T y R(X,Y) es verdadero o falso. Dado a, determinar el valor m(a). En la programación Lógica se implementa las relaciones. Sea R una relación: </p>
+                    <p>Dado a y b, determinar cuando R(a,b) es verdadero.</p>
+                    <p>Dado a, encontrar todos los Y/R(a,y) es verdadero. </p>
+                    <p>Dado b, encontrar todos los X/R(x,b) es verdadero. </p>
+                    <p>Encontrar X y Y/R(x,y) es verdadero. </p>
+                    <p>TIPOS DE RELACIONES</p>
+                    <p>Si R(x) entonces relación unitaria. </p>
+                    <p>Si R(x ,y) entonces relación binaria. </p>
+                    <p>Si R(x, y, z) entonces relación ternaria. </p>
+                    <p>Un programa en PROLOG define una colección de relaciones. Cada relación es definida por una o más cláusulas.</p>
+                    <p>INTERPRETACIÓN DE UNA CLÁUSULA EN PROLOG</p>
+                    <p>A:- A1,...,An.</p>
+                    <p>:- --> Es equivalente "Si" o "si". </p>
+                    <p>, --> Es equivalente "AND". </p>
+                    <p>; --> Es equivalente a "OR"</p> <br>
+                    <p>Esqueleto de los programas</p>
+                    <p>Cada regla esta formada por un primer miembro (o cabeza de la regla) un segundo miembro (o cola del arreglo) ligados por :- y termina con el carácter .</p> <br>
+                    <p>Aplicación para editar y ejecutar</p>
+                    <p>SWI-Prolog</p> <br>
+                    <p>A que paradigma pertenece:
+
+                    </p>
+                    <p>Prolog es un lenguaje lógico e interpretado, usado en el campo de la inteligencia artificial.</p> <br>
+                    <p>Ejemplo de un programa escrito en este lenguaje: </p>
+                    <p>?- write('¡Hola Mundo!').</p>
+
+                </article>
+            </section>
+
+        </section>
+        
+
+        <footer>
+            <ul>
+                <li><a href="tarea_4.html">Siguiente</a></li>
+                <li><a href="tarea_2.html">Anterior</a></li>
+                <li><a href="tarea_3.html">Inicio del tema actual</a></li>
+            </ul>        
+        </footer>
+
+    </div>
+</body>
+</html>
